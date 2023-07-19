@@ -1,4 +1,6 @@
 
+const price = 0.21;
+
 const userAge = parseInt(prompt ("inserisci la tua età"));
 
 const userKm = parseFloat(prompt ("inserisci il nuemro chilometri che vuoi percorrere"));
@@ -8,9 +10,6 @@ if (isNaN (userAge) || isNaN(userKm)){
 } 
 
 else {
-
-    
-    const price = 0.21;
 
     const discount20 = (price * userKm) * 0.8;
     
@@ -31,7 +30,7 @@ else {
 }
 
 
-alert("il prezzo del biglietto è: " + ticketPrice.toFixed(2) + " €");
+alert("il prezzo del biglietto è: " + ticketPrice.toFixed(2) + "€");
 
 
 }
