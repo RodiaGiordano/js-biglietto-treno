@@ -11,26 +11,24 @@ if (isNaN (userAge) || isNaN(userKm)){
 
 else {
 
-    const discount20 = (price * userKm) * 0.8;
-    
-    const discount40 = (price * userKm) * 0.6;
+    ticketPrice = price * userKm;
+
 
 
 if (userAge >65){
 
-    ticketPrice = discount40;       
+    ticketPrice *= 0.8;       
 }
 
 else if (userAge <18){
-    ticketPrice = discount20;
-}
-
-else {
-    ticketPrice = price * userKm;
+    ticketPrice *= 0.6;
 }
 
 
-alert("il prezzo del biglietto è: " + ticketPrice.toFixed(2) + "€");
+    
+
+
+document.getElementById("ticket").innerHTML = "il prezzo del biglietto è: " + ticketPrice.toFixed(2) + "€";
 
 
 }
